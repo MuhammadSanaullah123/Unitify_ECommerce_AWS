@@ -3,13 +3,14 @@
 # dependencies
 node_modules
 dev.js
-prod.js
+
+production.json
 /.pnp
 .pnp.js
 
 config/default.json
 config/keys.js
-config/prod.js
+
 
 
 # testing

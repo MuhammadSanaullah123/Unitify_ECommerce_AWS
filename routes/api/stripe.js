@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const { STRIPE_KEY } = require("../../config/keys");
+const { STRIPE_KEY } = require("../../config/prod");
 const stripe = require("stripe")(STRIPE_KEY);
 /* router.post("/payment", (req, res) => {
   try {

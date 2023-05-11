@@ -1,4 +1,4 @@
-const { mongoURI } = require("./keys.js");
+const { mongoURI } = require("./prod.js");
 
 const mongoose = require("mongoose");
 const config = require("config");
