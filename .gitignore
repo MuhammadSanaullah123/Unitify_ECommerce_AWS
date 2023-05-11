@@ -8,7 +8,7 @@ production.json
 /.pnp
 .pnp.js
 
-config/default.json
+
 config/keys.js
 
 
