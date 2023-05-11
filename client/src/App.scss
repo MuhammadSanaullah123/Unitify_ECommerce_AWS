@@ -1,0 +1,2518 @@
+:root {
+  --primary: #ff5e00; //primary color
+  --secondary: #2683ff; // secondary color
+  --primary-color: #17a2b8;
+  --dark-color: #343a40;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+/*---------------------------- CSS CODE START FOR USER:LOGIN PAGE----------------- */
+/***********************************************************************************/
+.line {
+  background: linear-gradient(
+    90deg,
+    rgba(155, 171, 191, 0) 1.04%,
+    #9babbf 51.56%,
+    rgba(155, 171, 191, 0) 100%
+  );
+  width: 95%;
+  height: 1.5px;
+  margin-bottom: 15px;
+}
+.mainloginDiv {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  background-image: url("./assets/login_background.jpg");
+  background-repeat: round;
+  .bigDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 528px;
+
+    @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+      width: 428px;
+    }
+    @media (max-width: 540px) {
+      width: 85%;
+    }
+    @media (max-width: 480px) {
+      width: 95%;
+    }
+    .circleDiv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: 60px;
+      padding: 30px;
+      margin: 0 auto;
+      border-radius: 50%;
+      box-shadow: 0px -20px 20px rgb(0 0 0 / 8%);
+      background-color: white;
+      z-index: 99;
+      .circleDiv2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 108px;
+        height: 108px;
+        border: 2px solid var(--primary);
+        border-radius: 50%;
+        z-index: 999;
+        @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+          width: 95px;
+          height: 95px;
+        }
+        @media (max-width: 540px) {
+          width: 90px;
+          height: 90px;
+        }
+        .circleDiv2pic {
+          filter: invert(46%) sepia(68%) saturate(2830%) hue-rotate(332deg)
+            brightness(91%) contrast(102%);
+
+          @media (max-width: 540px) {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+      @media (max-width: 540px) {
+        padding: 22px;
+      }
+      @media (max-width: 320px) {
+        padding: 20px;
+      }
+    }
+
+    .smallDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 528px;
+      // height: 356px;
+      background: #ffffff;
+      box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25);
+      z-index: 2;
+      border-radius: 6px;
+      justify-content: space-evenly;
+      padding-top: 50px;
+      @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+        width: 428px;
+      }
+      @media (max-width: 540px) {
+        width: 100%;
+      }
+
+      .input-container {
+        display: flex;
+        width: 426px;
+        height: 58px;
+        background: #ebeaea;
+        border-radius: 5px;
+        margin: 10px 0;
+        @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+          width: 350px;
+          height: 43px;
+        }
+        @media (max-width: 540px) {
+          width: 85%;
+        }
+        .inputimgback {
+          display: flex;
+          background-color: var(--primary);
+          align-items: center;
+          justify-content: center;
+          width: 54px;
+          height: 58px;
+          border-radius: 5px 0px 0px 5px;
+          @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+            height: 43px;
+            width: 50px;
+          }
+        }
+        .inputimg {
+          width: 38px;
+          height: 38px;
+          color: #ffffff;
+        }
+        .input-field {
+          width: 100%;
+          background: #ebeaea;
+          border: 0px;
+          font-size: 20px;
+          font-family: "Inter";
+          @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+            font-size: 17px;
+          }
+          padding-left: 15px;
+        }
+        .input-field:focus {
+          outline: none;
+        }
+        ::placeholder {
+          font-family: "Inter";
+          font-weight: 400;
+          font-size: 20px;
+          color: #937a7a;
+          //   padding-left: 30px;
+          @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+            font-size: 17px;
+          }
+        }
+      }
+      .check-container {
+        display: flex;
+        width: 426px;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        align-items: center;
+        margin-top: 10px;
+
+        @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+          width: 350px;
+        }
+        @media (max-width: 540px) {
+          width: 85%;
+        }
+        .form-check-input {
+          height: 14px;
+          width: 14px;
+        }
+        .checkp {
+          font-family: "Inter";
+          font-weight: 300;
+          font-size: 13px;
+          color: #464646;
+          margin-top: 0;
+          margin-left: 8px;
+          margin-bottom: 0;
+        }
+        .checkp2 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          color: var(--primary);
+          text-decoration: none;
+        }
+        .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+        .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+  .l1 {
+    text-decoration: none;
+  }
+  .btn1 {
+    width: 198px;
+    height: 59px;
+    background: var(--primary);
+    color: #ffffff;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    box-shadow: 0px 0px 7px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+      width: 170px !important;
+    }
+  }
+  .mainDivp1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    color: #473d3d;
+  }
+  .mainimgDiv {
+    display: flex;
+    width: 150px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    .imgDiv {
+      width: 62px;
+      height: 50px;
+      background: #c54238;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+        width: 52px !important;
+        height: 40px !important;
+      }
+      .endimg {
+        width: 32px;
+        height: 32px;
+        @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+          width: 25px !important;
+          height: 25px !important;
+        }
+      }
+    }
+  }
+}
+
+/*---------------------------- CSS CODE END FOR USER:LOGIN PAGE-------------------------- */
+
+/*---------------------------- CSS CODE START FOR USER:SIGNUP PAGE----------------- */
+/***********************************************************************************/
+.mainsignupDiv {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("./assets/login_background.jpg");
+  background-repeat: round;
+  .bigDivS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 528px;
+    height: 600px;
+
+    @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+      width: 428px;
+      height: 550px;
+    }
+    @media (max-width: 540px) {
+      width: 95%;
+    }
+    .circleDiv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: 60px;
+      padding: 30px;
+      margin: 0 auto;
+      border-radius: 50%;
+      box-shadow: 0px -20px 20px rgb(0 0 0 / 8%);
+      background-color: white;
+      z-index: 99;
+      @media (max-width: 400px) {
+        padding: 25px;
+      }
+      .circleDiv2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 108px;
+        height: 108px;
+        border: 2px solid var(--primary);
+        border-radius: 50%;
+        z-index: 999;
+        @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+          width: 95px;
+          height: 95px;
+        }
+        @media (max-width: 540px) {
+          width: 90px;
+          height: 90px;
+        }
+        @media (max-width: 400px) {
+          width: 80px;
+          height: 80px;
+        }
+        .circleDiv2pic {
+          filter: invert(46%) sepia(68%) saturate(2830%) hue-rotate(332deg)
+            brightness(91%) contrast(102%);
+
+          @media (max-width: 540px) {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+    }
+
+    .smallDivS {
+      padding-top: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 528px;
+      height: 370px;
+      background: #ffffff;
+      box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25);
+      z-index: 2;
+      border-radius: 6px;
+      justify-content: space-evenly;
+      @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+        width: 428px;
+        height: 320px;
+
+        justify-content: space-between;
+      }
+      @media (max-width: 1000px) {
+        padding-top: 50px;
+      }
+      @media (max-width: 540px) {
+        width: 100%;
+        padding-top: 45px;
+      }
+
+      .input-container {
+        display: flex;
+        width: 426px;
+        height: 58px;
+        background: #ebeaea;
+        border-radius: 5px;
+        @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+          width: 350px;
+          height: 43px;
+        }
+        @media (max-width: 540px) {
+          width: 90%;
+        }
+        @media (max-width: 500px) {
+          width: 90%;
+          height: 43px;
+        }
+        .inputimgback {
+          display: flex;
+          background-color: var(--primary);
+          align-items: center;
+          justify-content: center;
+          width: 54px;
+          height: 58px;
+          border-radius: 5px 0px 0px 5px;
+          @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+            height: 43px;
+            width: 50px;
+          }
+          @media (max-width: 500px) {
+            height: 43px;
+          }
+        }
+        .inputimg {
+          width: 38px;
+          height: 38px;
+          color: #ffffff;
+        }
+        .input-field {
+          width: 100%;
+          background: #ebeaea;
+          border: 0px;
+          font-size: 16px;
+          padding-left: 15px;
+          font-family: "Inter";
+        }
+        .input-field:focus {
+          outline: none;
+        }
+        ::placeholder {
+          font-family: "Inter";
+          font-weight: 400;
+          font-size: 16px;
+          color: #937a7a;
+          //  padding-left: 30px;
+        }
+      }
+      .check-container {
+        display: flex;
+        width: 426px;
+        align-items: center;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+          width: 350px;
+          height: 43px;
+        }
+        @media (max-width: 540px) {
+          width: 90%;
+        }
+
+        .form-check-input {
+          height: 14px;
+          width: 14px;
+        }
+        .checkpS {
+          font-family: "Inter";
+          font-weight: 300;
+          font-size: 13px;
+          color: #464646;
+          margin-top: 0;
+          margin-left: 8px;
+          display: flex;
+        }
+        .checkp2 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          color: var(--primary);
+          text-decoration: none;
+          margin-left: 5px;
+        }
+        .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+        .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+          color: var(--primary);
+        }
+      }
+      .smallDivp {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        color: rgb(255, 0, 0);
+
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+  .btn1 {
+    width: 198px;
+    height: 59px;
+    background: var(--primary);
+    color: #ffffff;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    box-shadow: 0px 0px 7px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+  }
+  .mainDivp1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    color: #473d3d;
+  }
+  .mainimgDiv {
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+    .imgDiv {
+      width: 62px;
+      height: 50px;
+      background: #c54238;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      .endimg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
+.SignBoxp {
+  width: 139px;
+  height: 30px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.SignBoxb1 {
+  width: 191px;
+  height: 48px;
+  background: #ffffff;
+  border-radius: 3px;
+  border: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--primary);
+  cursor: pointer;
+}
+.SignBoxb2 {
+  width: 191px;
+  height: 48px;
+  background: var(--primary);
+  border-radius: 3px;
+  border: 0;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/*---------------------------- CSS CODE END FOR USER:SIGNUP PAGE-------------------------- */
+
+/*---------------------------- CSS CODE START FOR USER:TERMSCONDITIONS PAGE----------------- */
+/***********************************************************************************/
+.termDiv {
+  // width: 95%;
+  // margin: 0 auto;
+  padding: 10px 20px 10px 20px;
+  background-image: url("./assets/login_background.jpg");
+  background-repeat: round;
+  .h6tag {
+    color: var(--primary);
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .ptag {
+    font-family: "Inter";
+    color: #000000;
+    font-style: normal;
+    font-size: 17px;
+    margin-top: 10px;
+  }
+}
+/*---------------------------- CSS CODE END FOR USER:TERMSCONDITIONS PAGE-------------------- */
+
+/*---------------------------- CSS CODE START FOR USER:HOME PAGE----------------- */
+/**********************************************************************************************/
+.Home {
+  .homed1 {
+    background-image: url("./assets/backgroundimg.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 25%);
+    height: 500px;
+    padding: 0 20px 0 20px;
+  }
+  .homed2 {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+    .homed1h1 {
+      font-family: "Inter";
+      font-size: 40px;
+      font-weight: 700;
+      color: #000000;
+      margin-bottom: 1.2em;
+      margin-top: 0;
+      @media (max-width: 710px) {
+        font-size: 35px;
+      }
+      @media (max-width: 600px) {
+        font-size: 40px;
+      }
+      @media (max-width: 480px) {
+        font-size: 35px;
+      }
+    }
+    .homed1d1b1 {
+      width: 200px;
+      height: 60px;
+      font-family: "Inter";
+      font-size: 25px;
+      font-weight: 700;
+      color: #000000;
+      border: 3px solid #000;
+      border-radius: 12px;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+  .homelandingimg {
+    width: 450px;
+    height: 450px;
+    @media (max-width: 915px) {
+      width: 350px;
+      height: 350px;
+    }
+    @media (max-width: 810px) {
+      width: 250px;
+      height: 250px;
+    }
+    @media (max-width: 710px) {
+      width: 200px;
+      height: 200px;
+    }
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+  .homed3 {
+    padding: 100px 0 50px 0;
+    //background-color: #e4dede4d;
+    //background-color: #ff6a0017;
+    background-image: url("./assets/backlinepic.png");
+    background-repeat: round;
+    .react-multi-carousel-list {
+      width: 90%;
+      align-self: center;
+      margin: 0 auto;
+      align-items: center;
+      .react-multi-carousel-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .carousel-button-group {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-self: center;
+      position: relative;
+      bottom: 190px;
+
+      @media (max-width: 400px) {
+        bottom: 160px;
+      }
+      @media (max-width: 465px) {
+        width: 100% !important;
+        svg {
+          width: 40px !important;
+        }
+      }
+    }
+  }
+  .homed4 {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 50px !important;
+    .homed4h1 {
+      font-family: "Inter";
+      font-size: 25px;
+      font-weight: 700;
+      margin: 0 0 20px 0;
+      color: var(--primary);
+    }
+    .homed5 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-row-gap: 1.5em;
+      justify-items: center;
+      @media (max-width: 1275px) {
+        grid-row-gap: 4em;
+      }
+      @media (max-width: 1030px) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @media (max-width: 685px) {
+        grid-template-columns: 1fr;
+      }
+      .homed6 {
+        width: 400px;
+        height: 300px;
+        border-radius: 12px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: rgb(0 0 0 / 18%) 0px 4px 8px;
+        @media (max-width: 1275px) and (min-width: 1030px) {
+          width: 320px;
+          height: 250px;
+        }
+        @media (max-width: 850px) and (min-width: 685px) {
+          width: 320px;
+          height: 250px;
+        }
+        @media (max-width: 415px) {
+          width: 300px;
+          height: 300px;
+        }
+        .homed4h2 {
+          font-family: "Inter";
+          font-size: 20px;
+          font-weight: 500;
+          align-self: center;
+          margin: 0 0 15px 0;
+          color: #000;
+        }
+        .homed6img {
+          min-width: 400px;
+          height: 250px;
+          border-radius: 12px;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          @media (max-width: 1275px) and (min-width: 1030px) {
+            min-width: 300px;
+            height: 200px;
+          }
+          @media (max-width: 850px) and (min-width: 685px) {
+            min-width: 300px;
+            height: 200px;
+          }
+          @media (max-width: 415px) {
+            min-width: 300px;
+            height: 250px;
+          }
+        }
+      }
+      .homed6:hover {
+        transform: scale(1.05);
+        opacity: 0.85;
+        //border: 2px solid var(--primary);
+        transition: 0.1s;
+      }
+    }
+  }
+}
+/*---------------------------- CSS CODE END FOR USER:HOME PAGE----------------------------- */
+
+/*---------------------------- CSS CODE START FOR USER:ProductCard Component----------------- */
+/**********************************************************************************************/
+
+.productcardd1 {
+  width: 320px;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-size: 322px 322px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 20px 0 0;
+  cursor: pointer;
+  border: 1px solid #494949;
+  @media (max-width: 400px) {
+    width: 280px;
+    height: 280px;
+    background-size: 280px 280px;
+  }
+  @media (max-width: 340px) {
+    width: 250px;
+    height: 250px;
+    background-size: 250px 250px;
+  }
+}
+.productcardlink {
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+}
+.productcardd2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  padding: 10px;
+  .productcardh1 {
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: #494949;
+
+    @media (max-width: 340px) {
+      font-size: 17px;
+    }
+  }
+  .productcardp1 {
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0 0 0;
+    color: #494949;
+    @media (max-width: 340px) {
+      font-size: 17px;
+    }
+  }
+}
+.productcardd1:hover {
+  //transform: scale(0.985);
+  // opacity: 0.8;
+  border: 3px solid var(--primary);
+  transition: 0.1s;
+}
+/*---------------------------- CSS CODE END FOR USER:ProductCard Component-------------------- */
+
+/*---------------------------- CSS CODE START FOR USER:ProductList PAGE---------------------- */
+/**********************************************************************************************/
+.productlist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+
+  padding: 10px;
+  @media (max-width: 845px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0;
+  }
+  .productlistd1 {
+    display: flex;
+    grid-column: 4/5;
+    width: 95%;
+    justify-content: flex-end;
+    @media (max-width: 1115px) {
+      grid-column: 1/2;
+      justify-self: center;
+    }
+    @media (max-width: 845px) {
+      grid-column: 1/5;
+      justify-content: flex-start;
+    }
+    @media (max-width: 645px) {
+      grid-column: 1/5;
+      justify-content: center;
+    }
+    /*     @media (max-width: 400px) {
+      width: 90%;
+      justify-self: center;
+    } */
+    .productlistd1form {
+      width: 250px;
+      @media (max-width: 645px) {
+        width: 350px;
+      }
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+    }
+    .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root,
+    .css-hfutr2-MuiSvgIcon-root-MuiSelect-icon,
+    .css-1636szt {
+      color: var(--primary);
+      opacity: 0.7;
+      font-family: "Inter";
+    }
+    .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root,
+    .css-fvipm8 {
+      border-radius: 10px !important;
+      border: 1px solid var(--primary);
+    }
+    .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused
+      .MuiOutlinedInput-notchedOutline {
+      border-color: transparent;
+    }
+    .productlistmenuitem {
+      color: var(--primary);
+    }
+  }
+  .productlistd2 {
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px 5px rgb(155 171 191 / 30%);
+    grid-column: 1/2;
+    padding: 15px 0 0 15px;
+    min-width: 250px;
+    .productlistd2h1 {
+      font-family: "Inter";
+      font-size: 22px;
+      margin: 0 0 20px 0;
+    }
+    @media (max-width: 845px) {
+      display: none;
+    }
+  }
+  .productlistd2mobile {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/5;
+    @media (min-width: 845px) {
+      display: none;
+    }
+    .productlistd2mobilebtn {
+      width: 90%;
+      height: 60px;
+      border: 1px solid var(--primary);
+      border-radius: 6px;
+      cursor: pointer;
+      @media (max-width: 645px) and (min-width: 500px) {
+        width: 350px;
+        background-size: 350px 350px;
+      }
+      @media (max-width: 500px) {
+        width: 95%;
+        background-size: 350px 350px;
+      }
+    }
+    .menupic {
+      color: var(--primary);
+      font-size: 2.5em;
+    }
+    .productlistd2mobilep {
+      font-family: "Inter";
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0;
+      color: #000000;
+      text-transform: none;
+    }
+  }
+  .line {
+    background: linear-gradient(
+      90deg,
+      rgba(155, 171, 191, 0) 1.04%,
+      #9babbf 51.56%,
+      rgba(155, 171, 191, 0) 100%
+    );
+    width: 95%;
+    height: 1.5px;
+    margin-bottom: 15px;
+  }
+  .productlistcheckboxdiv {
+    display: flex;
+    align-items: center;
+    .productlistcheckboxp {
+      margin: 0;
+      font-family: "Inter";
+    }
+    .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+    .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+      color: var(--primary);
+    }
+  }
+  .productlistd3 {
+    grid-column: 2/5;
+    display: grid;
+    grid-row-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    @media (max-width: 1115px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 845px) {
+      grid-column: 1/4;
+    }
+    @media (max-width: 645px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .pagination {
+    display: flex;
+    grid-column: 2/5;
+    justify-content: center;
+    margin-top: 30px;
+    .paginationlink {
+      color: var(--primary);
+      font-size: 30px;
+    }
+  }
+}
+.productlistd2 {
+  //box-shadow: 0px 10px 20px 5px rgb(155 171 191 / 30%);
+  padding: 15px 0 0 15px;
+  .productlistd2h1 {
+    font-family: "Inter";
+    font-size: 22px;
+    margin: 0 0 20px 0;
+  }
+}
+.productlistcheckboxdiv {
+  display: flex;
+  align-items: center;
+  .productlistcheckboxp {
+    margin: 0;
+    font-family: "Inter";
+  }
+  .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+  .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+    color: var(--primary);
+  }
+}
+.line {
+  background: linear-gradient(
+    90deg,
+    rgba(155, 171, 191, 0) 1.04%,
+    #9babbf 51.56%,
+    rgba(155, 171, 191, 0) 100%
+  );
+  width: 95%;
+  height: 1.5px;
+  margin-bottom: 15px;
+}
+/*---------------------------- CSS CODE END FOR USER:ProductList PAGE----------------------- */
+
+/*---------------------------- CSS CODE START FOR USER:ProductCardList Component----------------- */
+/**********************************************************************************************/
+
+.productcardlistd1 {
+  width: 270px;
+  height: 270px;
+  background-repeat: no-repeat;
+  background-size: 270px 270px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 20px 0 0;
+  border: 1px solid #a0a0a0;
+  cursor: pointer;
+
+  @media (max-width: 1110px) {
+    width: 320px;
+    height: 320px;
+    background-size: 320px 320px;
+  }
+  @media (max-width: 960px) {
+    width: 270px;
+    height: 270px;
+    background-size: 270px 270px;
+  }
+  @media (max-width: 845px) {
+    width: 300px;
+    height: 300px;
+    background-size: 300px 300px;
+  }
+  @media (max-width: 645px) {
+    width: 400px;
+    height: 400px;
+    background-size: 400px 400px;
+  }
+  @media (max-width: 420px) {
+    width: 320px;
+    height: 320px;
+    background-size: 320px 320px;
+  }
+  @media (max-width: 340px) {
+    width: 270px;
+    height: 270px;
+    background-size: 270px 270px;
+  }
+}
+.productcardd2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  padding: 10px;
+  .productcardh1 {
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    color: #494949;
+    @media (max-width: 340px) {
+      font-size: 17px;
+    }
+  }
+  .productcardp1 {
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0 0 0;
+    color: #494949;
+    @media (max-width: 340px) {
+      font-size: 17px;
+    }
+  }
+}
+
+/*---------------------------- CSS CODE END FOR USER:ProductCardList Component-------------------- */
+
+/*---------------------------- CSS CODE START FOR USER:Product PAGE---------------------- */
+/**********************************************************************************************/
+.product {
+  padding: 20px 30px 10px 30px;
+  display: flex;
+  margin-top: 50px;
+  @media (max-width: 980px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  @media (max-width: 480px) {
+    padding: 20px 10px 10px 10px;
+  }
+  .productpicdiv {
+    min-width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 402px 402px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    //border: 3px solid var(--primary);
+    cursor: pointer;
+    @media (max-width: 980px) {
+      align-self: center;
+      margin-bottom: 50px;
+    }
+    @media (max-width: 415px) {
+      min-width: 300px;
+      height: 300px;
+      background-size: 302px 302px;
+    }
+    @media (max-width: 310px) {
+      min-width: 250px;
+      height: 250px;
+      background-size: 252px 252px;
+    }
+    .productcardd2 {
+      display: flex;
+      flex-direction: column;
+      margin-top: auto;
+      padding: 10px;
+    }
+  }
+  .productd1 {
+    margin-left: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
+    .productcardh1 {
+      font-family: "Inter";
+      font-size: 36px;
+      font-weight: 700;
+      margin: 0;
+      color: var(--primary);
+      @media (max-width: 480px) {
+        text-align: center;
+      }
+      @media (max-width: 310px) {
+        font-size: 30px;
+      }
+    }
+    .productcardp1 {
+      font-family: "Inter";
+      font-size: 28px;
+      font-weight: 500;
+      color: #ffffff;
+      @media (max-width: 310px) {
+        font-size: 25px;
+      }
+    }
+    .productd1span1 {
+      width: 230px;
+      height: 55px;
+      background-color: var(--primary);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      @media (max-width: 480px) {
+        align-self: center;
+      }
+      @media (max-width: 310px) {
+        width: 210px;
+        height: 50px;
+      }
+    }
+    .productcarddespdiv {
+      max-width: 85%;
+      border: 1px solid rgba(207, 209, 210, 0.782);
+      border-radius: 10px;
+      padding: 20px;
+      margin-right: 20px;
+
+      @media (max-width: 480px) {
+        margin-right: 0;
+      }
+      .productcarddesph1 {
+        font-family: "Inter";
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 10px;
+        color: var(--primary);
+      }
+      .productcarddespp {
+        font-family: "Inter";
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0;
+        @media (max-width: 480px) {
+          width: 95%;
+        }
+      }
+    }
+  }
+  .productd2 {
+    border: 1px solid rgb(229, 232, 235);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    @media (max-width: 430px) {
+      flex-direction: column-reverse;
+    }
+    .productd2btn {
+      height: 55px;
+      width: 220px;
+      font-family: "Inter";
+      font-size: 17px;
+      border: 2px solid var(--primary);
+      background: transparent;
+      border-radius: 8px;
+      color: var(--primary);
+      font-weight: 500;
+      cursor: pointer;
+      @media (max-width: 430px) {
+        margin-bottom: 30px;
+      }
+    }
+    .productd2btndisabled {
+      height: 55px;
+      width: 220px;
+      font-family: "Inter";
+      font-size: 17px;
+      border: 2px solid rgba(211, 211, 211, 0.623);
+      background: rgba(211, 211, 211, 0.623);
+      border-radius: 8px;
+      color: rgb(153, 152, 152);
+      font-weight: 500;
+      cursor: pointer;
+      @media (max-width: 430px) {
+        margin-bottom: 30px;
+      }
+    }
+    .productd2btn:hover {
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    .productd2quandiv {
+      display: flex;
+      align-items: center;
+      margin-right: 50px;
+      @media (max-width: 430px) {
+        margin-right: 0;
+      }
+      .productd2quanp {
+        font-family: "Inter";
+        font-size: 25px;
+        font-weight: 500;
+        margin: 0 10px 0 0;
+      }
+      .productd2quannumber {
+        font-family: "Inter";
+        font-size: 25px;
+        font-weight: 700;
+        margin: 0 10px 0 10px;
+        color: var(--primary);
+      }
+    }
+  }
+}
+.productcarousel {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 50px 0;
+  margin-top: 50px;
+  //background-color: #e4dede4d;
+  //background-color: #ff6a0017;
+  background-image: url("./assets/backlinepic.png");
+  background-repeat: round;
+  .react-multi-carousel-list {
+    width: 90%;
+    align-self: center;
+    margin: 0 auto;
+    align-items: center;
+    .react-multi-carousel-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .carousel-button-group {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-self: center;
+    position: relative;
+    bottom: 190px;
+    @media (max-width: 645px) {
+      bottom: 210px;
+    }
+    @media (max-width: 400px) {
+      bottom: 160px;
+    }
+    @media (max-width: 480px) {
+      display: none;
+      width: 100% !important;
+      svg {
+        width: 40px !important;
+      }
+    }
+  }
+  .productcarouselh1 {
+    align-self: center;
+    font-family: "Inter";
+    font-size: 35px;
+    margin: 0 0 50px 0;
+    color: var(--primary);
+    @media (max-width: 340px) {
+      font-size: 30px;
+    }
+  }
+}
+/*---------------------------- CSS CODE END FOR USER:Product Component-------------------- */
+
+/*---------------------------- CSS CODE START FOR CartProduct:Component ----------------- */
+/***********************************************************************************/
+.cartproduct {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+  align-self: center;
+  margin-bottom: 10px;
+  .cartproductimg {
+    width: 150px;
+    border-radius: 6px;
+    border: 1px solid var(--primary);
+  }
+  .cartproductd1 {
+    display: flex;
+    flex-direction: column;
+    .cartproducth1 {
+      font-family: "Inter";
+      font-size: 20px;
+      font-weight: 600;
+      margin: 10px 0 10px 10px;
+      @media (max-width: 400px) {
+        font-size: 18px;
+      }
+    }
+    .cartproductp1 {
+      font-family: "Inter";
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--primary);
+      margin: 0 0 10px 10px;
+    }
+  }
+  .cartproductd2 {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10px;
+
+    .cartproductd2quannumber {
+      font-family: "Inter";
+      font-size: 25px;
+      font-weight: 600;
+      color: var(--primary);
+      margin: 0 10px 0 10px;
+      @media (max-width: 400px) {
+        font-size: 20px;
+      }
+    }
+    .cartproductd2icon {
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+
+    .cartproductd2deleteicon {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    @media (max-width: 400px) {
+      flex-direction: column;
+      justify-content: center;
+      .cartproductd2icon {
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+      .cartproductd2deleteicon {
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.CartBox {
+  .CartBoxh1 {
+    font-family: "Inter";
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-top: 0;
+  }
+  @media (max-width: 950px) {
+    width: 50% !important;
+  }
+  @media (max-width: 670px) {
+    width: 70% !important;
+  }
+  @media (max-width: 480px) {
+    width: 85% !important;
+  }
+  .cartproductp3 {
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    margin-top: 0;
+  }
+}
+.cartcheckoutbtn {
+  width: 70%;
+  min-height: 50px;
+  font-family: "Inter";
+  font-size: 17px;
+  font-weight: 500;
+  background-color: var(--primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  align-self: center;
+  margin: 10px 0 10px 0;
+  cursor: pointer;
+  @media (max-width: 400px) {
+    width: 90%;
+  }
+}
+.cartproductd3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 10px 0;
+  padding: 0 20px 0 20px;
+  .cartproductp2 {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0;
+    color: #666b70;
+  }
+  .cartproductp3 {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0;
+    color: var(--primary);
+  }
+}
+
+/*---------------------------- CSS CODE END FOR CartProduct:Component -------------------- */
+
+/*---------------------------- CSS CODE START FOR USER:Thankyou PAGE----------------- */
+/***********************************************************************************/
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  .thankyouh1 {
+    font-family: "Bonheur Royale";
+    font-weight: 400;
+    font-size: 110px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--primary);
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+      font-size: 70px;
+    }
+  }
+  .thankyoul1 {
+    background: linear-gradient(
+      90deg,
+      rgba(155, 171, 191, 0) 1.04%,
+      #9babbf 51.56%,
+      rgba(155, 171, 191, 0) 100%
+    );
+    width: 85%;
+    height: 0.5px;
+    margin-bottom: 15px;
+    align-self: center;
+  }
+  .thankyouh2 {
+    font-family: "Cormorant Upright";
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000;
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+      font-size: 35px;
+    }
+  }
+  .thankyoup1 {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 2;
+    text-align: center;
+    color: #9babbf;
+    margin-bottom: 20px;
+    @media (max-width: 480px) {
+      text-align: left;
+      align-self: center;
+      width: 80%;
+    }
+  }
+  .thankyouh3 {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--primary);
+    margin-bottom: 20px;
+  }
+  .thankyoud1 {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    max-height: 560px;
+    background: #ffffff;
+    box-shadow: 0px 5px 20px rgba(155, 171, 191, 0.5);
+    border-radius: 20px;
+    margin-top: 20px;
+    align-self: center;
+    padding: 15px;
+    overflow-y: auto;
+    @media (max-width: 530px) {
+      width: auto;
+    }
+    @media (max-width: 468px) {
+      margin: 0 15px 0 15px;
+    }
+  }
+
+  .thankyoud2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+  }
+  .thankyoup2 {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0;
+    color: #666b70;
+  }
+  .thankyoup3 {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0;
+    color: var(--primary);
+  }
+}
+.Items {
+  display: flex;
+  border: 1px solid var(--primary);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  justify-content: space-between;
+  .itemsimg {
+    width: 150px;
+    height: 130px;
+    border-radius: 8px;
+  }
+  .itemsd1 {
+    display: flex;
+    flex-direction: column;
+    .itemsh1 {
+      font-family: "Inter";
+      font-weight: 700;
+      font-size: 20px;
+      margin: 10px 0 10px 10px;
+    }
+    .itemsp1 {
+      font-family: "Inter";
+      font-weight: 700;
+      font-size: 20px;
+      margin: 10px 0 10px 10px;
+      color: var(--primary);
+    }
+  }
+  .itemsd2 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    @media (max-width: 400px) {
+      display: none;
+    }
+    .itemsp2 {
+      font-family: "Inter";
+      font-weight: 700;
+      font-size: 20px;
+      margin: 10px 0 10px 10px;
+    }
+    .itemsp3 {
+      font-family: "Inter";
+      font-weight: 700;
+      font-size: 20px;
+      margin: 10px 0 10px 0;
+      color: var(--primary);
+      text-align: center;
+    }
+  }
+}
+
+/*---------------------------- CSS CODE END FOR USER:Thankyou PAGE-------------------------- */
+
+/*---------------------------- CSS CODE START FOR USER:Checkout PAGE----------------- */
+/***********************************************************************************/
+.Checkout {
+  display: grid;
+  grid-template-columns: 1fr 0.6fr;
+  padding: 20px;
+  column-gap: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  @media (max-width: 1000px) {
+    row-gap: 1.5rem;
+  }
+  @media (max-width: 400px) {
+    padding: 20px 10px 20px 10px;
+  }
+  @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+    column-gap: 1rem;
+  }
+  .checkoutinfo {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/2;
+    height: auto;
+    padding-bottom: 20px;
+    border: 0.5px solid #43404079;
+    border-radius: 3px;
+    @media only screen and (max-width: 1000px) {
+      grid-column: 1/3;
+    }
+    @media (max-width: 768px) {
+      grid-column: 1/3;
+      grid-row: 1/2;
+    }
+    @media (max-width: 500px) {
+      height: auto;
+      padding-bottom: 15px;
+    }
+    .checkoutinfoh1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      color: #000000;
+      margin: 20px 0 0 20px;
+      @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+        font-size: 20px;
+      }
+    }
+    .checkoutinfod1 {
+      display: flex;
+      align-self: center;
+      width: 95%;
+      justify-content: space-between;
+      @media (max-width: 600px) {
+        flex-direction: column;
+      }
+      .checkoutinfod1radioparent {
+        display: flex;
+        align-items: flex-end;
+        .checkoutinfod1radioparenth1 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          color: rgba(56, 54, 54, 0.675);
+          margin: 0 0 10px;
+          @media (min-width: 600px) {
+            display: none;
+          }
+        }
+        .css-j204z7-MuiFormControlLabel-root {
+          margin-right: 0;
+        }
+      }
+
+      .checkoutinfodisable {
+        pointer-events: none;
+        opacity: 0.6;
+      }
+    }
+    .checkoutinfod3 {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+
+      @media (max-width: 600px) {
+        width: auto !important;
+      }
+      @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+        width: 40% !important;
+      }
+    }
+    .checkoutinfodr {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      margin-right: auto;
+      @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+        width: 40% !important;
+      }
+      @media (max-width: 1000px) {
+        width: 45% !important;
+      }
+      @media (max-width: 600px) {
+        width: 100% !important;
+      }
+    }
+    .filled-basic1,
+    .filled-basic2 {
+      width: 100%;
+      border-bottom: 0.5px solid #000000;
+    }
+    .backimg {
+      .css-10botns-MuiInputBase-input-MuiFilledInput-input,
+      .css-2bxn45 {
+        background-image: url(./assets/visa.png);
+        background-repeat: no-repeat;
+        background-position-y: center;
+        padding-left: 50px;
+        background-position-y: 27px;
+      }
+    }
+    .backimgcrypto {
+      .css-10botns-MuiInputBase-input-MuiFilledInput-input,
+      .css-2bxn45 {
+        background-image: url(./assets/coin.png);
+        background-repeat: no-repeat;
+        background-position-y: center;
+        padding-left: 30px;
+        background-position-y: 27px;
+        background-position-x: 5px;
+
+        background-size: 20px 20px;
+      }
+    }
+
+    .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root,
+    .css-17spqnz {
+      //mui input
+      width: 100%;
+      height: 34px;
+      background: #ade7ff;
+      border-radius: 3px;
+    }
+    .checkoutinfoverl1 {
+      width: 0px;
+      height: 118px;
+      border-left: 1.5px solid #000000;
+      margin: 0 5px 0 5px;
+      @media (max-width: 600px) {
+        display: none;
+      }
+      @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+        height: 100px;
+      }
+    }
+    .checkoutinfolabel {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      color: #494949;
+      margin: 0;
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+    .checkoutpaymentp1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      color: #494949;
+      margin: 0;
+
+      margin-left: 10px;
+    }
+    .checkoutcardimg {
+      color: var(--primary);
+      font-size: 30px;
+    }
+    .checkoutinfod2 {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+      width: 95%;
+      align-self: center;
+      max-height: 250px;
+      overflow-y: auto;
+
+      @media (max-width: 600px) {
+        margin-top: 10px;
+      }
+      .checkoutinfod2s1 {
+        display: flex;
+        align-items: center;
+        .addicon {
+          color: var(--primary);
+          font-size: 2.2rem;
+          cursor: pointer;
+        }
+        .checkoutinfod2p1 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          color: var(--primary);
+          margin: 0 0 0 10px;
+        }
+      }
+      .deleteicon {
+        color: var(--primary);
+        font-size: 2rem;
+        cursor: pointer;
+      }
+      .addressreadonlybtn {
+        height: 50px;
+        font-family: "Inter";
+        font-size: 18px;
+        background: none;
+        border: 1px solid darkgrey;
+        border-radius: 8px;
+        margin-right: 5px;
+        text-align: left;
+        overflow-y: auto;
+        cursor: pointer;
+
+        @media (max-width: 480px) {
+          height: 100px;
+        }
+      }
+      .addressreadonlybtnactive {
+        height: 50px;
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--primary);
+        background: none;
+        border: 2px solid var(--primary);
+        border-radius: 8px;
+        margin-right: 5px;
+        text-align: left;
+        overflow-y: auto;
+        cursor: pointer;
+        @media (max-width: 480px) {
+          height: 100px;
+        }
+      }
+    }
+    .filled-basic3 {
+      width: 100%;
+      border-bottom: 0.5px solid #000000;
+    }
+    .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root,
+    .css-17spqnz {
+      padding-bottom: 15px;
+    }
+  }
+  .checkoutpay {
+    grid-column: 2/3;
+    height: fit-content;
+    max-height: 450px;
+    border: 0.5px solid #43404079;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-bottom: 10px;
+    @media only screen and (max-width: 1000px) {
+      grid-column: 1/3;
+    }
+    .checkoutpayh1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      color: #000000;
+      margin: 10px 0 0 10px;
+      @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+        font-size: 20px;
+      }
+      @media only screen and (max-width: 1000px) {
+        margin: 20px 0 0 20px;
+      }
+    }
+    .checkoutpayd1 {
+      padding: 20px 20px 0 20px;
+    }
+    .checkoutpayd2 {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0 10px 0;
+      padding: 0 20px 0 20px;
+      .checkoutpayp1 {
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 25px;
+        margin: 0;
+        color: #666b70;
+      }
+      .checkoutpayp2 {
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 25px;
+        margin: 0;
+        color: var(--primary);
+      }
+    }
+    .checkoutpayp3 {
+      font-family: "Inter";
+      font-weight: 500;
+      font-size: 20px;
+      margin: 0;
+      color: #000;
+    }
+  }
+}
+.checkoutbtndiv {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  .checkoutbtndivb1 {
+    width: 501px;
+    height: 53px;
+    background: var(--primary);
+    border-radius: 11px;
+    font-style: normal;
+    font-weight: 600;
+    font-family: "Inter";
+    font-size: 20px;
+    color: #ffffff;
+    border: 0;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+      width: 401px;
+      height: 45px;
+      font-size: 18px;
+    }
+    @media (max-width: 600px) {
+      width: 90%;
+    }
+  }
+}
+.checkoutbtndivimg1 {
+  width: 40px;
+  height: 40px;
+  align-self: center;
+  margin-top: 25px;
+  @media (max-width: 490px) {
+    margin-top: 20px;
+  }
+}
+.checkoutbtndivp1 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+.confirmationBox {
+  background-color: var(--primary);
+  @media (max-width: 680px) {
+    width: 90% !important;
+  }
+  @media (max-width: 490px) {
+    height: auto !important;
+  }
+}
+.addressBox {
+  display: flex;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid var(--primary);
+  @media (max-width: 768px) {
+    width: 85% !important;
+  }
+  .addressBoxinput {
+    width: 98%;
+    height: 120px;
+    border-radius: 8px;
+    border: 2px solid darkgray;
+  }
+  textarea {
+    font-family: "Inter";
+    font-size: 20px;
+    padding: 5px;
+  }
+  .addressBoxbtn {
+    align-self: flex-end;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: var(--primary);
+    border: 0;
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+/*---------------------------- CSS CODE END FOR USER:Checkout PAGE--------------------------*/
+
+/*---------------------------- CSS CODE START FOR USER:Profile Page----------------- */
+/***********************************************************************************/
+.spinner {
+  display: flex !important;
+  height: 80px !important;
+  width: 80px !important;
+  color: var(--primary) !important;
+  margin: 0 auto !important;
+  margin-top: 100px !important;
+}
+.Profile {
+  padding: 0 20px 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 30px;
+  .profileline {
+    background: linear-gradient(
+      90deg,
+      rgba(155, 171, 191, 0) 1.04%,
+      #9babbf 51.56%,
+      rgba(155, 171, 191, 0) 100%
+    );
+    width: 450px;
+    height: 1.5px;
+    margin-top: 15px;
+    @media (min-width: 895px) {
+      display: none;
+    }
+  }
+  .ProfileD1 {
+    grid-column: 1/2;
+    @media (max-width: 895px) {
+      grid-column: 1/3;
+    }
+    .profileh1 {
+      font-family: "Inter";
+      font-weight: 600;
+      font-size: 25px;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    .profiled1 {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #494949;
+      width: 450px;
+      height: 420px;
+      border-radius: 8px;
+      align-items: center;
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+      .profiles1 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: red;
+        align-self: center;
+        margin-top: 15px;
+        border: 3px solid var(--primary);
+        .profileavatar {
+          width: inherit;
+          border-radius: inherit;
+        }
+      }
+      .input-field {
+        margin-top: 20px;
+        width: 90%;
+        height: 35px;
+        border: 1px solid;
+        border-radius: 4px;
+        padding-left: 7px;
+        font-family: "Inter";
+        font-size: 15px;
+      }
+      .text-field {
+        margin-top: 20px;
+        width: 90%;
+        height: 80px;
+        border: 1px solid;
+        border-radius: 4px;
+        padding-left: 5px;
+        padding-top: 5px;
+        font-family: "Inter";
+        font-size: 15px;
+        resize: none;
+      }
+      .profilebtn {
+        font-family: "Inter";
+        font-size: 15px;
+        font-weight: 600;
+        background-color: var(--primary);
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        width: 130px;
+        height: 35px;
+        align-self: flex-end;
+        margin-top: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .ProfileD2 {
+    grid-column: 2/3;
+    @media (max-width: 895px) {
+      grid-column: 1/3;
+    }
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--primary);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #b74a0a;
+    }
+    .profileh1 {
+      font-family: "Inter";
+      font-weight: 600;
+      font-size: 25px;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .ProfileD2d1 {
+      padding: 10px 20px 10px 10px;
+      border: 1px solid #494949;
+      height: 420px;
+      border-radius: 8px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    }
+  }
+}
+
+/*---------------------------- CSS CODE END FOR USER:Profile Page--------------------------*/
+
+/*---------------------------- CSS CODE START FOR USER:History Component----------------- */
+/***********************************************************************************/
+.History {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #494949;
+  height: 245px;
+  width: 100%;
+  border-radius: 8px;
+  align-items: center;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  .historyd1 {
+    display: flex;
+    align-self: flex-start;
+    padding: 10px;
+  }
+  .historyp1 {
+    font-family: "Inter";
+    font-size: 18px;
+    color: #494949;
+    font-weight: 500;
+    margin: 0;
+    align-self: flex-start;
+  }
+  .historyd2 {
+    display: flex;
+    margin: 20px 0 5px 10px;
+    align-self: flex-start;
+    .historyd2img {
+      width: 125px;
+      height: 125px;
+      border-radius: 8px;
+    }
+    .historyd2d1 {
+      display: flex;
+      flex-direction: column;
+      .historyd2d1h1 {
+        font-family: "Inter";
+        font-size: 20px;
+        color: #000;
+        font-weight: 600;
+        margin: 5px 0 0 20px;
+      }
+      .historyd2d1p1 {
+        font-family: "Inter";
+        font-size: 20px;
+        color: #494949;
+        font-weight: 500;
+        margin: 15px 0 0 20px;
+      }
+    }
+  }
+}
+
+/*---------------------------- CSS CODE END FOR USER:History Component--------------------------*/
+
+/*---------------------------- CSS CODE END FOR ADMIN:Products Page--------------------------*/
+/***********************************************************************************/
+.Products {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  .productsh1 {
+    font-family: "Inter";
+    font-size: 25px;
+    color: var(--primary);
+    font-weight: 600;
+    margin: 0;
+  }
+  .productsd1 {
+    display: flex;
+    background-color: #494949;
+    padding: 10px;
+    border-radius: 12px;
+    margin-top: 15px;
+    overflow-y: auto;
+  }
+  .productsd2 {
+    display: flex;
+    min-width: 220px;
+    height: 350px;
+    border-radius: 18px;
+    border: 3px dashed rgba(255, 255, 255, 0.779);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .productsd2img {
+      color: rgba(255, 255, 255, 0.779);
+      font-size: 50px;
+      cursor: pointer;
+    }
+  }
+  .productsd3 {
+    display: flex;
+    flex-direction: column;
+    max-width: 220px;
+    height: 350px;
+    border-radius: 18px;
+    border: 3px dashed var(--primary);
+    margin-left: 20px;
+    min-width: 220px;
+    .productsd3img {
+      border-radius: 18px 18px 0 0;
+      height: 150px;
+    }
+    .productsp1 {
+      font-family: "Inter";
+      font-size: 16px;
+      margin: 0;
+      margin-top: 5px;
+      margin-left: 5px;
+      color: #fff;
+    }
+    .productsp2 {
+      overflow-y: auto;
+      font-family: "Inter";
+      font-size: 16px;
+      margin: 0;
+      margin-top: 5px;
+      margin-left: 5px;
+      color: #fff;
+    }
+    .productsbtndiv {
+      display: flex;
+      padding: 10px;
+      .productsdeletebtn {
+        font-family: "Inter";
+        font-size: 16px;
+        width: 100px;
+        height: 35px;
+        background-color: rgba(255, 36, 36, 0.8);
+        color: #fff;
+        border: 0;
+        border-radius: 8px;
+        align-self: flex-end;
+        cursor: pointer;
+      }
+      .productsupdatebtn {
+        font-family: "Inter";
+        font-size: 16px;
+        width: 100px;
+        height: 35px;
+        background-color: var(--secondary);
+        color: #fff;
+        border: 0;
+        border-radius: 8px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .productssubmitbtn {
+    font-family: "Inter";
+    font-size: 16px;
+    width: 200px;
+    height: 45px;
+    background-color: var(--primary);
+    color: #fff;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 8px;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+}
+.productsmodelbox {
+  .boxdropdown {
+    border-radius: 4px;
+    border: 1px solid #494949;
+    width: 97%;
+    .boxdropdownlabel {
+      font-family: "Inter";
+      color: #494949;
+      margin: 0;
+    }
+    .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused
+      .MuiOutlinedInput-notchedOutline {
+      border-color: none;
+      border-width: 0;
+    }
+  }
+  .input-field {
+    margin-top: 20px;
+    width: 95%;
+    height: 35px;
+    border: 1px solid #494949;
+    border-radius: 4px;
+    font-family: "Inter";
+    font-size: 15px;
+    padding-left: 7px;
+  }
+
+  .text-field {
+    margin-top: 20px;
+    width: 95%;
+    height: 80px;
+    border: 1px solid #494949;
+    border-radius: 4px;
+    padding-top: 5px;
+    font-family: "Inter";
+    font-size: 15px;
+    resize: none;
+    padding-left: 7px;
+  }
+  .submitbtn {
+    width: 130px;
+    height: 40px;
+    font-family: "Inter";
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: #fff;
+    margin-top: 10px;
+    align-self: end;
+    cursor: pointer;
+  }
+}
+/*---------------------------- CSS CODE END FOR ADMIN:Products Page--------------------------*/
+
+/*---------------------------- CSS CODE START FOR BACKEND & API CSS----------------- */
+/***********************************************************************************/
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.badge {
+  font-size: 0.8rem;
+  padding: 0.1rem;
+  text-align: center;
+  margin: 0.3rem;
+  background: var(--light-color);
+  color: #333;
+}
+.alert {
+  padding: 0.8rem;
+  margin: 1rem 0;
+  margin-bottom: 10px;
+  opacity: 0.9;
+  background: var(--light-color);
+  color: #333;
+  font-family: "Inter";
+  z-index: 100000;
+  width: -webkit-fill-available;
+  position: fixed;
+}
+
+.btn-primary,
+.bg-primary,
+.badge-primary,
+.alert-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn-light,
+.bg-light,
+.badge-light,
+.alert-light {
+  background: var(--light-color);
+  color: #333;
+}
+
+.btn-dark,
+.bg-dark,
+.badge-dark,
+.alert-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.btn-danger,
+.bg-danger,
+.badge-danger,
+.alert-danger {
+  background: var(--danger-color);
+  color: #fff;
+}
+
+.btn-success,
+.bg-success,
+.badge-success,
+.alert-success {
+  background: var(--success-color);
+  color: #fff;
+}
+
+.btn-white,
+.bg-white,
+.badge-white,
+.alert-white {
+  background: #fff;
+  color: #333;
+  border: #ccc solid 1px;
+}
+/*---------------------------- CSS CODE END FOR BACKEND & API CSS-------------------------- */

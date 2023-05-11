@@ -1,0 +1,172 @@
+.Footer {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  // width: 95%;
+  margin: 0 auto;
+  // margin-bottom: 30px !important;
+  // max-width: 1536px;
+  .hline {
+    width: 95%;
+    height: 0px;
+    border: 0.5px solid #5c5c5c;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+  .both_img_p {
+    display: flex;
+    background-image: url("../../assets/backgroundimg.jpg");
+    background-position-x: right;
+    background-repeat: no-repeat;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    justify-content: space-between;
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
+    .both_img_p_logo {
+      height: 70px;
+      align-self: center;
+      margin-bottom: 10px;
+    }
+    .footerd2 {
+      display: flex;
+      width: 90%;
+      justify-content: space-evenly;
+      .footerrespd1,
+      .footerrespd2 {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        @media (max-width: 750px) {
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 440px) {
+        flex-direction: column;
+      }
+      @media (max-width: 585px) {
+        display: none;
+      }
+    }
+    .footermobile {
+      @media (min-width: 585px) {
+        display: none;
+      }
+      @media (max-width: 320px) {
+        margin-top: 10px;
+      }
+      .css-1elwnq4-MuiPaper-root-MuiAccordion-root,
+      .css-67l5gl {
+        margin-bottom: 10px;
+        box-shadow: none;
+      }
+      .css-1elwnq4-MuiPaper-root-MuiAccordion-root:before,
+      .css-67l5gl::before {
+        display: none;
+      }
+      .css-o4b71y-MuiAccordionSummary-content,
+      .css-17o5nyn {
+        margin: 0;
+      }
+      .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root,
+      .css-1iji0d4 {
+        min-height: 40px;
+      }
+      .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root,
+      .css-1iji0d4 {
+        padding-left: 0 !important;
+      }
+      .footermobiled1 {
+        display: flex;
+        flex-direction: column;
+      }
+      .footermobilea {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        color: #000000;
+        margin-top: 10px;
+        text-decoration: none;
+      }
+      .footermobilelastdiv {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        justify-content: space-around;
+        margin-bottom: 20px;
+
+        .imgcirclediv {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 36px;
+          height: 36px;
+          border: 1px solid #000000;
+          border-radius: 50%;
+          margin-left: 5px;
+          .imgcircle {
+            filter: invert(0%) sepia(95%) saturate(14%) hue-rotate(50deg)
+              brightness(0%) contrast(100%);
+          }
+        }
+        .footerimgdiv {
+          display: flex;
+        }
+      }
+    }
+    .footerd1 {
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+      justify-content: space-around;
+      margin-bottom: 20px;
+      text-align: center;
+      .imgcirclediv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border: 1px solid #000000;
+        border-radius: 50%;
+        margin-left: 5px;
+        .imgcircle {
+          filter: invert(0%) sepia(95%) saturate(14%) hue-rotate(50deg)
+            brightness(0%) contrast(100%);
+        }
+      }
+      .footerimgdiv {
+        display: flex;
+        @media (max-width: 750px) {
+          align-self: center;
+        }
+      }
+    }
+    .footerh6 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      color: #000000;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    .footerp {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      color: #000000;
+      text-decoration: none;
+    }
+  }
+  .css-1elwnq4-MuiPaper-root-MuiAccordion-root,
+  .css-67l5gl {
+    background-color: transparent;
+  }
+  .css-i4bv87-MuiSvgIcon-root {
+    color: #000000;
+  }
+}
