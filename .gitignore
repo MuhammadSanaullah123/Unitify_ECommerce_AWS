@@ -3,19 +3,21 @@
 # dependencies
 node_modules
 dev.js
+prod.js
 
-production.json
+
 /.pnp
 .pnp.js
 
 
 config/keys.js
-
+config/prod.js
+config/production.json
 
 
 # testing
 /coverage
-
+config/prod.js
 # production
 /build
 

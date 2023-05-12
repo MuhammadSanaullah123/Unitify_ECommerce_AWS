@@ -29,7 +29,7 @@ const CartProduct = ({ item }) => {
     <div className="cartproduct">
       <img src={item.productimg} alt="Product" className="cartproductimg" />
       <div className="cartproductd1">
-        <h1 className="cartproducth1">{item.productname}</h1>
+        <h1 className="cartproducth1">{item.productname.slice(0, 8)}...</h1>
         <p className="cartproductp1">$ {item.productprice}</p>
       </div>
       <div className="cartproductd2">
