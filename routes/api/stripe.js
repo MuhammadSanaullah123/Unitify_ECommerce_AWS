@@ -76,8 +76,8 @@ router.post("/payment", async (req, res) => {
     ],
     line_items,
     mode: "payment",
-    success_url: "http://localhost:3000/checkout/true",
-    cancel_url: "http://localhost:3000/checkout/false",
+    success_url: "http://3.108.247.218/checkout/true",
+    cancel_url: "http://3.108.247.218/checkout/false",
   });
 
   res.send({ url: session.url });

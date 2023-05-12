@@ -100,7 +100,7 @@ const Checkout = () => {
 
   let redirect_Page = () => {
     let tID = setTimeout(function () {
-      window.location.href = "http://localhost:3000/thankyou";
+      window.location.href = "http://3.108.247.218/thankyou";
       window.clearTimeout(tID); // clear time out.
     }, 3000);
   };

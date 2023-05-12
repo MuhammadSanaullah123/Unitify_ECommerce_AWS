@@ -250,7 +250,7 @@ router.post(
       <h1 style="color: #333333; font-size: 20px;">Thankyou ${name} for shopping at UnitifyMarket!</h1>
       <p style="color: #666666; font-size: 16px;">Your order id is #${profile.history[0]._id}</p>
       <p style="color: #666666; font-size: 16px;">Click on the following link to see your order list:  
-      http://localhost:3000/thankyou
+      http://3.108.247.218/thankyou
       </p>
 
       
