@@ -84,6 +84,18 @@
     flex-direction: column;
     justify-content: center;
   }
+  .otherlinks {
+    display: flex;
+    justify-content: space-between;
+    width: 125px;
+    .otherlinksa1 {
+      color: var(--primary);
+      font-family: "Inter";
+      font-size: 18px;
+      font-weight: 600;
+      text-underline-offset: 8px;
+    }
+  }
 }
 .navicons {
   color: var(--primary);

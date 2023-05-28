@@ -572,6 +572,24 @@ const Navbar = () => {
                   inputProps={{ "aria-label": "search" }}
                 />
               </Search>
+              <div className="otherlinks">
+                <Link
+                  onClick={() => {
+                    window.open("https://unitifycrypto.netlify.app");
+                  }}
+                  className="otherlinksa1"
+                >
+                  Crypto{" "}
+                </Link>
+                <Link
+                  onClick={() => {
+                    window.open("https://unitifynft.netlify.app/");
+                  }}
+                  className="otherlinksa1"
+                >
+                  NFTs{" "}
+                </Link>
+              </div>
               <Box sx={{ flexGrow: 1 }} />
 
               {!isloading && (
