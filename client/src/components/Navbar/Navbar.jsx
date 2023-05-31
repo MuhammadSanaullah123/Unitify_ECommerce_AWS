@@ -553,7 +553,7 @@ const Navbar = () => {
             <Toolbar>
               <Link to="/home">
                 <img
-                  style={{ width: "120px", height: "40px" }}
+                  style={{ width: "140px", height: "70px" }}
                   src={logo}
                   alt=""
                 />
