@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Footer.scss";
 
 //assets
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo1.png";
 import footerfb from "../../assets/footerfb.svg";
 import footerinsta from "../../assets/footerinsta.svg";
 import footertwitter from "../../assets/footertwitter.svg";

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.29c65a64.css",
-    "main.js": "/static/js/main.8ec78a9b.js",
+    "main.css": "/static/css/main.7b73574f.css",
+    "main.js": "/static/js/main.2a7b1476.js",
     "static/media/furniture.jpg": "/static/media/furniture.2f725a82cfb226fce5c1.jpg",
     "static/media/login_background.jpg": "/static/media/login_background.7a58a3f678390057532b.jpg",
     "static/media/electronics.jpg": "/static/media/electronics.31ac131863fe625ae96c.jpg",
@@ -27,11 +27,11 @@
     "static/media/fb.svg": "/static/media/fb.0ea6a0a38d0f4a75fb9391e6d9a80609.svg",
     "static/media/footertwitter.svg": "/static/media/footertwitter.57f9a793a47822317ef6e0680e33eadd.svg",
     "static/media/footerfb.svg": "/static/media/footerfb.58042a14c0c7068d66a00fc543d21013.svg",
-    "main.29c65a64.css.map": "/static/css/main.29c65a64.css.map",
-    "main.8ec78a9b.js.map": "/static/js/main.8ec78a9b.js.map"
+    "main.7b73574f.css.map": "/static/css/main.7b73574f.css.map",
+    "main.2a7b1476.js.map": "/static/js/main.2a7b1476.js.map"
   },
   "entrypoints": [
-    "static/css/main.29c65a64.css",
-    "static/js/main.8ec78a9b.js"
+    "static/css/main.7b73574f.css",
+    "static/js/main.2a7b1476.js"
   ]
 }
