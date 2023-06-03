@@ -78,7 +78,9 @@ const Home = () => {
     dispatch(getCurrentProfile());
     dispatch(getProducts());
     const timer = setTimeout(() => {
-      if (isAuthenticated && profile.loading && profile.profile == null) {
+      if (isAuthenticated && profile.loading && profile.profile === null) {
+        console.log("HELLO");
+
         navigate("/profile");
       }
     }, 1500);
